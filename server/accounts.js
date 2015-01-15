@@ -26,9 +26,7 @@ Meteor.startup(function(){
   })
 
 })
-
 Accounts.validateLoginAttempt(function(authData){
-  console.log('validateLoginAttempt() called:')
-  console.log(authData)
-  return false
+  Profiles.authUser(authData)
+  return true
 })
