@@ -1,2 +1,2 @@
 #Tougues
-Meteor + famo.us
+Meteor MVP project
