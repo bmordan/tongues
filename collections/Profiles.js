@@ -1,4 +1,9 @@
 Profiles = new Mongo.Collection('profiles')
+Profiles.allow({
+  update: function(userId, profile){
+    return true
+  }
+})
 Profiles.authUser = function(authData){
   var type = authData.type
   switch(type){
@@ -25,6 +30,7 @@ Profiles.authUser = function(authData){
   }
 }
 Profiles.newProfile = function(handle, name, email, type){
+  if(email === null) return
   var userData = {
     handle: handle,
     name: name,

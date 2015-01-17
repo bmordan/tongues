@@ -11,8 +11,17 @@
 
 <template name="main">
   <main>
-    <section id="logo">
-      <img src="logo.svg">
+   <section id="square">
+    {{#if currentUser}}
+      {{>upload}}
+    {{else}}
+      fluentli
+    {{/if}}
     </section>
   </main>
+</template>
+
+<template name="upload">
+  <p>Upload a file for translation</p>
+  
 </template>

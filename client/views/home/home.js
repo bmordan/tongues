@@ -1,11 +1,13 @@
 Template.home.rendered = function(){
   animateLogo()
-  animateLogins()
 }
 function animateLogo(){ 
-  $('section#logo').hide()
+  $('section#square').hide()
   setTimeout(function(){
-    $('section#logo').addClass('animated bounceInDown')
-    $('section#logo').show()
+    $('section#square').addClass('animated bounceInDown')
+    $('section#square').show()
   },750)
 }
+Template.upload.helpers({
+  
+})

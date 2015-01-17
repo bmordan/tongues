@@ -1,12 +1,27 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,400);
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-img{max-width:100%;}
+
+/*========================
+      Globals
+========================*/
+
+html         { width: 100%;height: 100%;}
+img          { max-width: 100%;}
 body{
   font-family: 'Raleway', sans-serif;
-  font-size: 1em;
 }
 header{
-  padding: 1%;
+  display: block;
+}
+h1{
+  text-align: center;
+  color: rgb(255,255,255);
+  text-shadow: 3px 1px 4px rgba(0, 0, 0, 1);
+  font-size: 1em;
+}
+p{
+  font-size: 1em;
+  display: inline-block;
 }
 #login-buttons{
   display: block;
@@ -16,11 +31,85 @@ header{
   position: relative;
   margin: 7% auto 7% auto;
 }
+.accounts-dialog, main section#square{
+  display:block;
+  margin:auto; 
+  border:solid 1px gray;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
+  -moz-box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
+  box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
+} 
 .accounts-dialog{
-  width:80%;
-  margin:auto;
-  padding: 3% 5% 10% 5%;
+  padding: 0% 0% 0% 0%;
 }
-.salmon{
-  background-color: salmon;
+main section#square{
+  text-align: center;
 }
+
+/*========================
+      Media Queries
+========================*/
+
+@media only screen and (max-width: 24em){ /* width 1 */
+  header{
+    margin: 4% 5% 7% 5%;
+  }
+  h1{
+    padding: 0% 0% 0% 0%;
+    font-size: 161%;
+  }
+  #login-buttons{
+    display: block;
+    margin: 1% auto 1% auto;
+  }
+  #login-dropdown-list{
+    position: relative;
+    margin: 7% auto 7% auto;
+  }
+  .accounts-dialog, main section#square{
+    display:block;
+    width:91%;
+    margin:auto; 
+    border:solid 1px gray;
+    border-radius: 5px;
+    -webkit-box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
+    -moz-box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
+    box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
+  } 
+  .accounts-dialog{
+    padding: 3% 5% 10% 5%;
+  }
+  main section#square{
+    line-height:15em;
+  }
+}
+@media only screen and (min-width: 24em) and (max-width: 44em){ /* width 2 */
+  h1{
+    padding: 0% 0% 0% 0%;
+    font-size: 161%;
+  }
+}
+
+@media only screen and (min-width: 44em) and (max-width: 68em){  /* width 3 */
+  h1{
+    padding: 0% 0% 0% 0%;
+    font-size: 161%;
+  }  
+}
+
+@media only screen and (min-width: 44em) and (max-width: 68em) and (min-height: 800px){  /* width 3 Height Portrait*/
+  h1{
+    padding: 0% 0% 0% 0%;
+    font-size: 161%;
+  }  
+}
+
+@media only screen and (min-width: 68em){  /* DESKTOPS */
+  h1{
+    padding: 0% 0% 0% 0%;
+    font-size: 161%;
+  }  
+}
+
+
