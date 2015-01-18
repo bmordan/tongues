@@ -24,11 +24,6 @@ Template.upload.events({
     })
   }
 })
-Template.documentLink.events({
-  'click .button': function (e) {
-    Router.go('/documents/'+Meteor.userId())
-  }
-})
 function animateLogo(){ 
   $('section.square').hide()
   setTimeout(function(){

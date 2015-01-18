@@ -4,18 +4,13 @@
 
 <template name="main">
   <main>
+    <section class="square">
     {{#if currentUser}}
-      <section class="square">
-        {{>upload}}
-      </section>
-      <section class="square">
-        {{>documentLink}}
-      </section>
+      {{>upload}}
     {{else}}
-      <section class="square">
-        {{>brandLogo}}
-      </section>
+      {{>brandLogo}}
     {{/if}}
+    </section>
     
   </main>
 </template>
@@ -23,11 +18,6 @@
 <template name="upload">
   <p>Upload a document for translation</p>
   <a class="button">Upload</a>
-</template>
-
-<template name="documentLink">
-  <p>Browse your documents</p>
-  <a class="button">Browse</a>
 </template>
 
 <template name="brandLogo">

@@ -30,12 +30,15 @@ li{
 a{
   color: rgb(210,50,50);
 }
+header nav{
+  display: inline-block;
+  float:right;
+}
 main section.square {
   text-align: center;
 }
 #login-buttons{
-  display: block;
-  margin: 1% auto 1% auto;
+  display: inline-block;
 }
 #login-dropdown-list{
   position: relative;
@@ -68,7 +71,6 @@ main section.square {
     font-size: 161%;
   }
   #login-buttons {
-    display: block;
     margin: 1% auto 1% auto;
   }
   #login-dropdown-list {

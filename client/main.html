@@ -5,12 +5,20 @@
 <body>
   {{>header}}
 </body>
+
 <template name="header">
   <header>
     {{>loginButtons}}
+    {{#if currentUser}}
+      {{>nav}}
+    {{/if}}
   </header>
 </template>
 
 <template name="nav">
-  <nav></nav>
+  <nav>
+    <a href="{{nav.route}}">
+      <i class="fa {{nav.icon}} fa-2x"></i>
+    </a>
+  </nav>
 </template>
