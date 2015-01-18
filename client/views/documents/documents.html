@@ -1,0 +1,11 @@
+<template name="documents">
+  {{>documentList}}
+</template>
+
+<template name="documentList">
+  <main>
+    {{#each docs}}
+      <li><a href="{{doc.url}}" target="_Blank">{{doc.filename}} {{doc.size}}kb</a>{{created}}</li>
+    {{/each}}
+  </main>
+</template>

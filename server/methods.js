@@ -1,10 +1,13 @@
 Meteor.methods({
-  profiles: function () {
+  _dump: function () {
     var profiles = Profiles.find().fetch()
-    console.log(profiles)
+    var documents = Documents.find().fetch()
+    console.log('Profiles:', profiles)
+    console.log('Documents:', documents)
   },
-  clear: function () {
+  _empty: function () {
     Profiles.remove({})
+    Documents.remove({})
   },
   configAccounts: function () {
     Accounts.loginServiceConfiguration.remove({
