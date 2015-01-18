@@ -1,27 +1,35 @@
 <template name="home">
-  {{>header}}
   {{>main}}
-</template>
-
-<template name="header">
-  <header>
-    {{>loginButtons}}
-  </header>
 </template>
 
 <template name="main">
   <main>
-   <section id="square">
     {{#if currentUser}}
-      {{>upload}}
+      <section class="square">
+        {{>upload}}
+      </section>
+      <section class="square">
+        {{>documentLink}}
+      </section>
     {{else}}
-      tongues
+      <section class="square">
+        {{>brandLogo}}
+      </section>
     {{/if}}
-    </section>
+    
   </main>
 </template>
 
 <template name="upload">
-  <p>Upload a file for translation</p>
-  <button id="upload">Upload</button>
+  <p>Upload a document for translation</p>
+  <a class="button">Upload</a>
+</template>
+
+<template name="documentLink">
+  <p>Browse your documents</p>
+  <a class="button">Browse</a>
+</template>
+
+<template name="brandLogo">
+  <article>Tongues</article>
 </template>

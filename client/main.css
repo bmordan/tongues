@@ -5,10 +5,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
       Globals
 ========================*/
 
-html         { width: 100%;height: 100%;}
-img          { max-width: 100%;}
+html{ width: 100%;height: 100%;}
+img { max-width: 100%;}
 body{
   font-family: 'Raleway', sans-serif;
+  background-color: rgba(210,50,50,0.2);
 }
 header{
   display: block;
@@ -23,6 +24,15 @@ p{
   font-size: 1em;
   display: inline-block;
 }
+li{
+  list-style-type: none;
+}
+a{
+  color: rgb(210,50,50);
+}
+main section.square {
+  text-align: center;
+}
 #login-buttons{
   display: block;
   margin: 1% auto 1% auto;
@@ -31,20 +41,18 @@ p{
   position: relative;
   margin: 7% auto 7% auto;
 }
-.accounts-dialog, main section#square{
+.accounts-dialog, main section.square{
   display:block;
   margin:auto; 
-  border:solid 1px gray;
+  border:solid 1px rgba(152,36,36,0.5);
   border-radius: 5px;
-  -webkit-box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
-  -moz-box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
-  box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
+  background-color: rgb(255,255,255);
+  -webkit-box-shadow: -2px 2px 5px 1px rgba(210,50,50,0.3);
+  -moz-box-shadow: -2px 2px 5px 1px rgba(210,50,50,0.3);
+  box-shadow: -2px 2px 5px 1px rgba(210,50,50,0.3);
 } 
 .accounts-dialog{
   padding: 0% 0% 0% 0%;
-}
-main section#square{
-  text-align: center;
 }
 
 /*========================
@@ -52,37 +60,59 @@ main section#square{
 ========================*/
 
 @media only screen and (max-width: 24em){ /* width 1 */
-  header{
+  header {
     margin: 4% 5% 7% 5%;
   }
-  h1{
+  h1 {
     padding: 0% 0% 0% 0%;
     font-size: 161%;
   }
-  #login-buttons{
+  #login-buttons {
     display: block;
     margin: 1% auto 1% auto;
   }
-  #login-dropdown-list{
+  #login-dropdown-list {
     position: relative;
     margin: 7% auto 7% auto;
   }
-  .accounts-dialog, main section#square{
+  .accounts-dialog, main section.square {
     display:block;
     width:91%;
-    margin:auto; 
-    border:solid 1px gray;
-    border-radius: 5px;
-    -webkit-box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
-    -moz-box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
-    box-shadow: -2px 2px 5px 1px rgba(191,191,191,1);
+    margin:auto;
   } 
   .accounts-dialog{
     padding: 3% 5% 10% 5%;
   }
-  main section#square{
+  main section.square {
     height: 9em;
-    padding: 19% 0% 0% 0%;
+    padding: 21% 0% 0% 0%;
+  }
+  main section.square article{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 360%;
+    color: rgb(210,50,50);
+    font-weight: 700;
+  }
+  main section.square a.button {
+    display: block;
+    width: 69%;
+    margin: 3% auto;
+    padding: 3% 0% 4% 0%;
+    color: rgb(255,255,255);
+    background-color: rgb(210,50,50);
+  }
+  main li {
+    background-color: rgb(255,255,255);
+    padding: 5%;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(210,50,50);
+    border-bottom-width: 2px;
+  }
+  main li a {
+    display: block;
+    margin: 2% 0% 2% 0%;
   }
 }
 @media only screen and (min-width: 24em) and (max-width: 44em){ /* width 2 */

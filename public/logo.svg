@@ -9,142 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="768"
-   height="768"
+   width="704.60773"
+   height="148.032"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="logo.svg">
   <defs
-     id="defs4">
-    <filter
-       inkscape:label="Drop Shadow"
-       id="filter3781"
-       color-interpolation-filters="sRGB">
-      <feFlood
-         flood-opacity="0.388"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         id="feFlood3783" />
-      <feComposite
-         in="flood"
-         in2="SourceGraphic"
-         operator="in"
-         result="composite1"
-         id="feComposite3785" />
-      <feGaussianBlur
-         stdDeviation="1"
-         result="blur"
-         id="feGaussianBlur3787" />
-      <feOffset
-         dx="1.2"
-         dy="1"
-         result="offset"
-         id="feOffset3789" />
-      <feComposite
-         in="SourceGraphic"
-         in2="offset"
-         operator="over"
-         result="fbSourceGraphic"
-         id="feComposite3791" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix3793" />
-      <feFlood
-         id="feFlood3795"
-         flood-opacity="0.388"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         in="fbSourceGraphic" />
-      <feComposite
-         id="feComposite3797"
-         in2="fbSourceGraphic"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur3799"
-         stdDeviation="1"
-         result="blur" />
-      <feOffset
-         id="feOffset3801"
-         dx="1.2"
-         dy="1"
-         result="offset" />
-      <feComposite
-         id="feComposite3803"
-         in2="offset"
-         in="fbSourceGraphic"
-         operator="over"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix3805" />
-      <feFlood
-         id="feFlood3807"
-         flood-opacity="0.388"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         in="fbSourceGraphic" />
-      <feComposite
-         id="feComposite3809"
-         in2="fbSourceGraphic"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur3811"
-         stdDeviation="3.2"
-         result="blur" />
-      <feOffset
-         id="feOffset3813"
-         dx="1.2"
-         dy="1"
-         result="offset" />
-      <feComposite
-         id="feComposite3815"
-         in2="offset"
-         in="fbSourceGraphic"
-         operator="over"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix3817" />
-      <feFlood
-         id="feFlood3819"
-         flood-opacity="0.388"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         in="fbSourceGraphic" />
-      <feComposite
-         id="feComposite3821"
-         in2="fbSourceGraphic"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur3823"
-         stdDeviation="3.2"
-         result="blur" />
-      <feOffset
-         id="feOffset3825"
-         dx="1.2"
-         dy="1"
-         result="offset" />
-      <feComposite
-         id="feComposite3827"
-         in2="offset"
-         in="fbSourceGraphic"
-         operator="over"
-         result="composite2" />
-    </filter>
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -153,20 +25,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="684.71428"
-     inkscape:cy="364"
+     inkscape:cx="299.63484"
+     inkscape:cy="-22.605706"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="752"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:window-width="1051"
+     inkscape:window-height="743"
+     inkscape:window-x="113"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -175,7 +47,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -183,26 +54,18 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(818.28571,-128.36218)">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter3781)"
-       id="rect2985"
-       width="640"
-       height="640"
-       x="-754.28571"
-       y="192.36218"
-       ry="24.771986" />
+     transform="translate(-19.302859,-361.72448)">
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#32e632;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-658.89984"
-       y="565.49817"
-       id="text3829"
+       style="font-size:11.07355976px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#d23232;fill-opacity:1;stroke:none;font-family:Sans"
+       x="44.508671"
+       y="476.80798"
+       id="text2985"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan3831"
-         x="-658.89984"
-         y="565.49817"
-         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#32e632;fill-opacity:1;font-family:LiHei Pro;-inkscape-font-specification:LiHei Pro">fluentli</tspan></text>
+         id="tspan2987"
+         x="44.508671"
+         y="476.80798"
+         style="font-size:132.88270569px;font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;fill:#d23232;fill-opacity:1;font-family:Hiragino Kaku Gothic Std;-inkscape-font-specification:Hiragino Kaku Gothic Std Ultra-Bold">Tongues</tspan></text>
   </g>
 </svg>

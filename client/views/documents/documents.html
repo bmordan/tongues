@@ -3,9 +3,12 @@
 </template>
 
 <template name="documentList">
-  <main>
+  <main id="documentList">
     {{#each docs}}
-      <li><a href="{{doc.url}}" target="_Blank">{{doc.filename}} {{doc.size}}kb</a>{{created}}</li>
+      <li class="animated bounceInLeft">
+        <a href="{{doc.url}}" target="_Blank">{{doc.filename}} {{doc.size}}kb</a>
+        <time>{{created}}</time>
+      </li>
     {{/each}}
   </main>
 </template>

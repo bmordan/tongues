@@ -5,9 +5,7 @@ Template.upload.rendered = function () {
   loadFilePicker(accounts.filepicker)
 }
 Template.upload.events({
-  'click #upload': function (e) {
-    console.log(Meteor.userId())
-    
+  'click #upload': function (e) {    
     filepicker.pick({
       mimetypes: ['text/plain','text/html'],
       multiple: true
@@ -16,7 +14,7 @@ Template.upload.events({
       Documents.insert({
         userId: Meteor.userId(),
         doc: InkBlob,
-        created: new Date()
+        created: moment().format('MMMM Do YYYY h:mm:ss a')
       });
       Router.go('/documents/'+Meteor.userId())
     },
@@ -26,10 +24,15 @@ Template.upload.events({
     })
   }
 })
+Template.documentLink.events({
+  'click .button': function (e) {
+    Router.go('/documents/'+Meteor.userId())
+  }
+})
 function animateLogo(){ 
-  $('section#square').hide()
+  $('section.square').hide()
   setTimeout(function(){
-    $('section#square').addClass('animated bounceInDown')
-    $('section#square').show()
+    $('section.square').addClass('animated bounceInDown')
+    $('section.square').show()
   },750)
 }
