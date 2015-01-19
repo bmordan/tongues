@@ -34,5 +34,19 @@ Meteor.methods({
       clientId: accounts.googleClientId,
       secret: accounts.googleSecret
     })
+  },
+  countWords: function (InkBlob) {
+    var fileType = _.last(InkBlob.filename.split('.'))
+    var remoteFile = InkBlob.url
+    var count = 0
+    HTTP.get(remoteFile, function (err, result) {
+      count = result.content.split(' ').length-1
+      Documents.insert({
+        userId: Meteor.userId(),
+        doc: InkBlob,
+        words: count,
+        created: moment().format('MMMM Do YYYY h:mm:ss a')
+      });
+    })
   }
 })

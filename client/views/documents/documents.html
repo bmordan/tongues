@@ -6,7 +6,9 @@
   <main id="documentList">
     {{#each docs}}
       <li class="animated bounceInLeft">
-        <a href="{{doc.url}}" target="_Blank">{{doc.filename}} {{doc.size}}kb</a>
+        <a href="{{doc.url}}" target="_Blank">{{doc.filename}} {{doc.size}}kb </a>
+        <samp>Word Count: {{words}}</samp>
+        <a href="#"><i class="fa fa-remove fa-1x"></i></a><br />
         <time>{{created}}</time>
       </li>
     {{/each}}

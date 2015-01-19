@@ -5,17 +5,13 @@ Template.upload.rendered = function () {
   loadFilePicker(accounts.filepicker)
 }
 Template.upload.events({
-  'click #upload': function (e) {    
+  'click': function (e) {    
     filepicker.pick({
       mimetypes: ['text/plain','text/html'],
       multiple: true
     },
     function (InkBlob) {
-      Documents.insert({
-        userId: Meteor.userId(),
-        doc: InkBlob,
-        created: moment().format('MMMM Do YYYY h:mm:ss a')
-      });
+      var count = Meteor.call('countWords', InkBlob)
       Router.go('/documents/'+Meteor.userId())
     },
     function(FPError){
