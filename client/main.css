@@ -31,8 +31,9 @@ a{
   color: rgb(210,50,50);
 }
 header nav{
-  display: inline-block;
-  float:right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 main section.square {
   text-align: center;
@@ -66,11 +67,15 @@ main section.square {
   header {
     margin: 4% 5% 7% 5%;
   }
+  header nav {
+    padding: 3% 3% 0% 0%;
+  }
   h1 {
     padding: 0% 0% 0% 0%;
     font-size: 161%;
   }
   #login-buttons {
+    width: 99%;
     margin: 1% auto 1% auto;
   }
   #login-dropdown-list {
